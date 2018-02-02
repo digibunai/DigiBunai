@@ -1,0 +1,330 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 May, 2016, 3:23:09 PM
+    Author     : Amit Kumar Singh
+*/
+
+#container {
+   -fx-background-image: url("img/d_main.png");
+   -fx-border-color: #000000;
+   -fx-border-width: 1.0 0.0 0.0 0.0;
+}
+
+
+#rightPane {
+   -fx-background-image: url("img/d_right.png");
+   -fx-text-alignment: left;
+   /*-fx-padding: 0.0 0.0 0.0 20.0;*/
+   -fx-alignment: TOP_CENTER;
+   -fx-wrap-text:true;    
+   -fx-font-size: 20px;
+   -fx-font-family: "Tahoma";
+   -fx-fill: #000000;
+   -fx-hgap: 10;
+   -fx-vgap: 10; 
+}
+
+#preview{
+    -fx-border-width: 5;
+    -fx-border-color: #FFFFFF;  
+    -fx-alignment: CENTER;
+}
+
+#recentPane {
+   -fx-background-image: url("img/d_right.png");
+   -fx-text-alignment: left;
+   -fx-alignment: CENTER_LEFT;
+   -fx-wrap-text:true;    
+   -fx-font-size: 20px;
+   -fx-font-family: "Tahoma";
+   -fx-fill: #000000;
+   
+}
+
+#list {
+   -fx-font-size: 14px;
+   -fx-font-weight:bold;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-padding: 10;
+}
+
+#mainPane{
+   -fx-background-image: url("img/d_border.png");
+   -fx-background-repeat: no-repeat;
+   -fx-padding: 40 25 10 25; /* top right bottom left*/
+   -fx-hgap: 0;
+   -fx-vgap: 0; 
+   -fx-spacing: 40;
+   -fx-line-spacing:1em;
+   -fx-text-alignment: center;
+   -fx-alignment: TOP_RIGHT;
+   -fx-wrap-text:false;    
+   -fx-font-size: 20px;
+   -fx-font-family: "Arial";
+   -fx-fill: #0000FF;
+}
+
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10; 
+    -fx-spacing: 10;
+    -fx-line-spacing:10;
+    -fx-padding: 10;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+.VBox{
+    -fx-background-repeat: no-repeat;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-wrap-text:true;
+    -fx-spacing: 6; 
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0000FF;
+    -fx-padding: 30;
+}
+
+.VBox:hover {
+    -fx-background-color: #d9d9d9;
+    -fx-background-radius: 25;
+}
+
+
+#label{
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0000FF;
+    -fx-padding: 10;
+    /*-fx-background-color: rgba(255,204,102,0.5);*/
+}
+
+#summary{
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0000FF;
+    -fx-wrap-text:true;
+    -fx-line-spacing:20;
+    -fx-spacing: 20;
+    -fx-padding: 20;
+    /*-fx-background-color: rgba(255,204,102,0.8);    */
+}
+
+.menu-button{
+    -fx-skin: "com.sun.javafx.scene.control.skin.MenuButtonSkin";
+    -fx-background-color: transparent;
+    -fx-text-fill: #00FF00;
+    -fx-wrap-text:true;
+    -fx-alignment: TOP_RIGHT;
+    -fx-content-display:right;
+    -fx-text-alignment:right;
+    -fx-padding: 0; 
+    -fx-spacing: 0;
+
+}
+
+.menu-button:focused {
+    -fx-background-color: linear-gradient(#9D9D9D,#BBBBBB);
+    -fx-padding: 0; 
+    -fx-spacing: 0;
+}
+
+
+.context-menu {
+    -fx-background-color: linear-gradient(#AAAAAA,#CCCCCC);
+    -fx-background-insets: 3;
+    -fx-background-radius: 0 6 6 6;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-alignment: TOP_RIGHT;
+    -fx-content-display:right;
+    -fx-text-alignment:right;
+    
+}
+.menu .label { 
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #FFFFFF;
+    
+}
+
+.menu-item {
+    -fx-background-color: linear-gradient(#AAAAAA,#CCCCCC);
+    -fx-alignment: TOP_RIGHT;
+    -fx-text-fill: #000000;
+}
+
+.menu-item:focused {
+    -fx-background-color: #888888;
+}
+
+
+/*
+.menu-button > .arrow-button > .arrow {
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-padding: 0.25em; 
+    -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
+}
+
+.menu-button > .menu-item .label {
+    -fx-text-fill: white;
+}
+
+
+
+.menu-item:focused .label {
+    -fx-text-fill: blue;
+}
+*/
+
+.separator{
+    -fx-background-color: #012345;
+}
+
+.tooltip{
+    -fx-graphic:url('img/icontooltip.png');
+    -fx-graphic-text-gap:10;
+    -fx-content-display:left;
+    -fx-text-alignment:justify;
+    -fx-wrap-text:true;
+}
+
+.titled-pane {
+    -fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.titled-pane:focused {
+    -fx-text-fill: white;
+}
+.titled-pane > .title {
+    -fx-background-color: -fx-box-border, -fx-inner-border, linear-gradient(#9D9D9D,#BBBBBB);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-border-color: linear-gradient(from 25% 25% to 100% 100%, #C8C8C8,#DDDDDD);
+    -fx-border-width: 2;
+}
+
+.titled-pane:focused > .title {
+    -fx-color: #123456;    
+    -fx-background-color: linear-gradient(#171613,#5C594A);
+    
+}
+
+.titled-pane > .title > .arrow-button 
+{
+-fx-background-color: null;
+-fx-background-insets: 0;
+-fx-background-radius: 5;
+-fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+
+.titled-pane > .title > .arrow-button .arrow 
+{
+-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+-fx-background-insets: 1 0 -1 0, 0;
+-fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+-fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow 
+{
+-fx-rotate: -90;
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.titled-pane > *.content {
+    /*-fx-background-image: url("img/d_recent.png");*/
+    -fx-background-color: transparent;     
+ }
+ 
+ *.titled-pane > *.content > .label {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-fill: #FFFFFF;
+    -fx-padding: 0.167em;
+    -fx-text-fill: white;
+ }
+ 
+ *.titled-pane > *.content > .label:hover {
+    -fx-background-color: #FF9033;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-fill: #FFFFFF;
+    -fx-padding: 0.167em;
+    -fx-text-fill: white;
+ }
+
+/*
+.button {
+-fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.HBox{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #B2E1AB;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 10.0 10.0 10.0 10.0;
+    -fx-text-alignment: center; 
+    -fx-border-width: 10 10 30 60;
+    -fx-border-color: #416D98;  
+    -fx-alignment: center;
+    -fx-background-color: linear-gradient(#FFFFD6,#FADE9A);
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-wrap-text:true;
+    -fx-spacing: 10;
+    -fx-text-fill: #093d72;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 11pt;
+    -fx-background-image: url("img/bg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-wrap-text:true;
+    -fx-spacing: 10;
+    -fx-text-fill: #093d72;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 11pt;
+}
+
+.label{
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-opacity: 1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+*/

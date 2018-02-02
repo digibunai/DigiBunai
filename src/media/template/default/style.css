@@ -1,0 +1,284 @@
+/*
+ * Copyright (C) 2016 Media Lab Asia
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/* 
+    Created on : Dec 14, 2015, 2:51:52 PM
+    Author     : acer
+*/
+
+.button {
+    -fx-text-fill: #000000;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#E7EFF6, #C1D5E8);
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color: #515151; 
+    
+}
+.button:hover {
+    -fx-border-width: 3 3 3 3;
+    -fx-border-color: #7a8a99; 
+    
+}
+
+.label{
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #000000;
+    -fx-opacity: 1;
+    /*
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    */
+}
+
+.menu-bar { 
+    -fx-background-color: linear-gradient(#000000,#5C594A);
+}
+
+.menu {
+    -fx-font-weight: bolder;
+    -fx-background-color: linear-gradient(#000000,#5C594A);
+}
+
+.menu:showing { 
+    -fx-background-color: #4D81B8;
+}
+
+.menu:hover {
+    -fx-background-color: #4D81B8;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+.menu .label { 
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #FFFFFF;    
+}
+
+.tool-bar {
+    -fx-background-position: left bottom;
+    -fx-background-image: url("img/bottom_border.png");
+    -fx-background-repeat: repeat-x;    
+    -fx-background-color: linear-gradient(#E0E0E0,#C1C1C1);
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-alignment: TOP_LEFT;
+}
+.flow {
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-alignment: TOP_LEFT;
+    -fx-hgap: 0;
+    -fx-vgap: 0;    
+    -fx-text-alignment: center; 
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #FFFFFF;
+    /*-fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+.context-menu .menu-item:hover {
+    -fx-background-color: #CCE3F4;
+}
+
+.separator{
+    -fx-background-color: #515151;
+}
+
+.tooltip{
+    /*-fx-graphic:url('img/icontooltip.png');
+    -fx-wrap-text:true;*/
+    -fx-graphic-text-gap:10;
+    -fx-content-display:left;
+    -fx-text-alignment:justify;
+    -fx-font-weight:bold;    
+}
+
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-repeat: repeat;
+    -fx-background-position: center center;
+    -fx-background-color: #c9cecf;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+.VBox{
+    -fx-background-image: url("img/separator.png");
+    -fx-padding: 10.0 0.0 0.0 0.0;
+    -fx-background-repeat: no-repeat;
+    -fx-text-alignment: center;
+    -fx-alignment: TOP_CENTER;
+    -fx-wrap-text:true;
+    -fx-spacing: 6; 
+    -fx-text-fill: #093d72;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 11pt;
+    -fx-background-color: transparent;
+}
+
+.VBox:hover {
+    -fx-background-color: linear-gradient(#AAAAAA,#CCCCCC);
+}
+
+.VBox:showing { 
+    -fx-background-color: #FAE09D;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+.VBox:focused {
+    -fx-background-color: #F0D590;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+.HBox {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 6; 
+    -fx-background-color: #171615;
+}
+
+#popup{
+    -fx-background-color: #c9cecf;
+    -fx-padding: 5;
+    -fx-border-width: 3;
+    -fx-border-color: #7a8a99; 
+}
+
+#subpopup{
+    -fx-padding: 5;
+    -fx-border-width: 1;
+    -fx-border-color: #7a8a99; 
+    -fx-background-color: #99abbb;
+}
+
+#dummypopup{
+    -fx-padding: 5;
+    -fx-border-width: 1;
+    -fx-border-color: #b1b9bf;
+	-fx-background-color: #bbc3c9;
+}
+
+#btnYes {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-border-color: #515151; 
+    -fx-background-color: linear-gradient(#00ff00, #009900);
+    -fx-effect: dropshadow( three-pass-box , rgba(1,1,0,0.6) , 5, 0.0 , 0 , 1 );    
+}
+
+#btnNo {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-border-color: #515151; 
+    -fx-background-color: linear-gradient(#ff0000, #990000);
+    -fx-effect: dropshadow( three-pass-box , rgba(1,1,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#topContainer{
+    
+}
+
+#footContainer{
+    -fx-border-width: 2 0 0 0;
+    -fx-border-color: #7a8a99; 
+    -fx-background-color: #ffffff;
+}
+
+#containerGP {
+   -fx-alignment: TOP_CENTER;
+   -fx-vgap: 10;
+   -fx-hgap: 10;
+}
+
+#leftPane{
+   -fx-background-image: url("img/side_panel_bg.png");
+   -fx-background-repeat: repeat;
+   -fx-alignment: TOP_LEFT;
+   -fx-valignment: top;
+   -fx-text-alignment: justify;
+   -fx-text-fill: #FFFFFF;
+   -fx-fill: #FFFFFF;
+   -fx-wrap-text:true;
+   -fx-font-size: 12px;
+   -fx-font-family: "Tahoma";
+   -fx-padding: 0.0 0.0 0.0 10.0;
+   -fx-vgap: 0;
+   -fx-hgap: 0;
+}
+
+#leftPane .label{
+   -fx-text-fill: #000000;
+   -fx-fill: #000000;
+   -fx-wrap-text:true;
+   -fx-font-size: 12px;
+   -fx-font-family: "Tahoma";
+   -fx-padding: 0.0 0.0 0.0 10.0;
+   -fx-vgap: 0;
+   -fx-hgap: 0;
+}
+
+#caption{
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 18pt;
+    -fx-font-weight:bold;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #012345;
+    -fx-opacity: 1;
+    -fx-fill: #012345;
+    -fx-effect: innershadow( three-pass-box , rgba(0,255,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#message {    
+   -fx-padding: 0.0 0.0 0.0 20.0;
+   -fx-font-size: 14px;
+   -fx-font-family: "Arial Black";
+   -fx-text-fill: #000000;
+   /*-fx-fill: #171615;
+   -fx-effect: innershadow( three-pass-box , rgba(0,255,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+
+#result {    
+   -fx-font-size: 20px;
+   -fx-font-family: "Arial Narrow";
+   -fx-text-fill: #FF0000;
+   -fx-fill: #171615;
+   -fx-effect: innershadow( three-pass-box , rgba(0,255,0,0.7) , 6, 0.0 , 0 , 2 );
+}

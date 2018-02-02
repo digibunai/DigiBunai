@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 10, 2015, 6:26:23 PM
+    Author     : acer
+*/
+.menu .label { 
+    -fx-wrap-text:true;
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #FFFFFF;
+    
+}
+/*
+.border-pane {
+    -fx-spacing: 10;
+    -fx-line-spacing:10;
+    -fx-padding: 0;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+    -fx-border-width: 0;
+    -fx-border-color: #7a8a99; 
+    -fx-opacity: 0.8;
+    -fx-background-insets: 0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("../media/login.png");
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10; 
+    -fx-spacing: 10;
+    -fx-line-spacing:10;
+    -fx-padding: 0;
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-alignment: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-background-image: url("../media/splash.gif");
+}
+*/
+#borderpane {
+    -fx-spacing: 0;
+    -fx-line-spacing:0;
+    -fx-padding: 0;
+    -fx-text-alignment: left;
+    -fx-border-width: 0;
+    -fx-border-color: #7a8a99; 
+    -fx-opacity: 1;
+    -fx-background-insets: 0;
+    -fx-background-repeat: stretch;
+	-fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-image: url("../media/login.png");
+}
+
+#grid {
+    -fx-hgap: 10;
+    -fx-vgap: 10; 
+    -fx-spacing: 10;
+    -fx-line-spacing:10;
+    -fx-padding: 30;
+    -fx-alignment: TOP_LEFT;
+    
+    -fx-text-alignment: center;
+    -fx-border-width: 2;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 10;
+    -fx-background-repeat: repeat;
+    -fx-background-position: center;
+    
+    -fx-background-color: #ffffff;
+    /*-fx-background-color: linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+    -fx-background-color: transparent;*/
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-max-height:100;
+}
+
+/*
+.text-field {
+    -fx-min-height:50;
+    -fx-pref-height:60;
+    -fx-max-height:100;
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+    -fx-min-height:50;
+    -fx-pref-height:60;
+    -fx-max-height:100;
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+*/
+.button {
+    -fx-wrap-text:true;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#E7EFF6, #C1D5E8);
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color: #515151; 
+}
+
+.button:hover {
+    -fx-wrap-text:true;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: #7a8a99; 
+    -fx-background-color: linear-gradient(#C1D5E8, #E7EFF6);
+}
+
+#welcome-text {
+   -fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-text-fill: linear-gradient(to bottom, derive(-fx-base,-50%), derive(-fx-base,+50%), derive(-fx-base,-50%));
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#version-text {
+   -fx-font-size: 11px;
+   -fx-fill: transparent;
+   -fx-text-fill: #012345;
+   -fx-text-alignment: center;
+   -fx-alignment: BOTTOM_CENTER;
+}
+
+#error {
+  -fx-fill: rgb(255,0,0);
+  -fx-font-weight: bold;
+  -fx-wrap-text:true;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+#success {
+  -fx-fill: rgb(0,255,0);
+  -fx-font-weight: bold;
+  -fx-wrap-text:true;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+#actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-wrap-text:true;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
